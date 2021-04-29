@@ -32,7 +32,9 @@
                 />
               </div>
               <div v-else-if="col.button == 'Delete'">
-                <button type="button" class="btn" @click="deleteRow(row.id)">Delete</button>
+                <button type="button" class="btn" @click="deleteRow(row.id)">
+                  Delete
+                </button>
               </div>
               <span v-else>{{ row[col.value] }}</span>
             </td>
@@ -141,16 +143,16 @@ export default {
   font-size: 32px;
 }
 
-table 			      { 
-  border-spacing: 1; 
-  border-collapse: collapse; 
-  background:white;
-  border-radius:6px;
-  overflow:hidden;
-  max-width:800px; 
-  width:100%;
-  margin:0 auto;
-  position:relative;
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
   color: #212529;
   border: 1px solid #dee2e6;
 }
@@ -211,5 +213,4 @@ tr {
 .checkbox {
   background: #226fbe;
 }
-
 </style>
